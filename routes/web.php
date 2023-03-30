@@ -33,3 +33,7 @@ Route::get('/', function () {
 
 //Route::match(['get','post'],'/url', function (){});
 ?>
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
