@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\HomeController;
+//use App\Http\Requests\ProductRequest;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,27 +15,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    //dd($request);
-   // $env = \Illuminate\Support\Facades\App::environment();
-//dd($env);
-//$name = config('app.name');
-//dd($name);
-    return view('welcome');
-    
-    });
-    Route::get('/users/{id}',function ($id) {
-   dd($id);
-    });
-//Route::post();
-//Route::put();
-//Route::patch();
-//Route::delete();
-//Route::option();
+Route::get('/', [HomeController::class,'index']);
 
-//Route::match(['get','post'],'/url', function (){});
-?>
+Route::get('/product/show/{id}',  [HomeController::class,'show'])->name('product_detail');
 
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+?>
