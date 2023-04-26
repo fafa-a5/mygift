@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Product;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -13,7 +14,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+       // $this->middleware('auth');
     }
 
     /**
@@ -21,8 +22,29 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
+    
+
     public function index()
+   {
+    $products = Product::all();
+    //dd($products);
+    return view('index', [
+        'products' => $products
+        
+    ]);
+    }
+
+     public function show($id)
     {
-        return view('home');
+    $product = Product::find($id);
+   /* if(!$product){
+        request()->session()->flash('error','Unable to locate the todo');
+        return to_route('detail')->withErrors([
+            'errors' => 'Unable to locate the todo'
+        ]);
+    }*/
+    return view('product_detail', [
+        'product' => $product]);
+
     }
 }
