@@ -13,11 +13,11 @@ return new class extends Migration
     {
         Schema::create('payments', function (Blueprint $table) {
             $table->id();
-            $table->string('number', 50);
+            $table->string('slug', 50);
             $table->string('number_received', 50);
             $table->float('cost');
             $table->string('method', 10);
-            $table->date('date');
+            $table->timestamps();
         });
     }
 

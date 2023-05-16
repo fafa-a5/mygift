@@ -115,7 +115,7 @@
           </div>
           <a href="#" class="">
             <img src="/storage/products/img/{{ $product->image }}" class="card-img-top rounded-2" />
-            <a class="inner btn btn-sm btn-info" href="{{ route('product.show', $product->id)}}">detail</a>
+            <a class="inner btn btn-sm btn-info" href="{{ route('product_detail', $product->id)}}">detail</a>
           </a>
           <div class="card-body d-flex flex-column pt-3 border-top">
             <a href="#" class="nav-link">{{ $product->name }}</a>
@@ -124,7 +124,7 @@
               <!-- <del class="">$24.99</del> -->
             </div>
             <div class="card-footer d-flex align-items-end pt-3 px-0 pb-0 mt-auto">
-              <a href="#" class="btn btn-outline-primary w-100"> Add to cart</a>
+              <a href="#" class="btn btn-outline-primary w-100">Add to cart</a>
             </div>
           </div>
         </div>

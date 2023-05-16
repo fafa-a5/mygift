@@ -13,20 +13,21 @@ return new class extends Migration
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
-            $table->string('number', 50);
-            $table->date('date');
-            $table->date('date_processing');
-            $table->date('date_delivery');
-            $table->float('cost');
+            $table->string('slug', 50);
             $table->float('cost_before_tax');
-            $table->float('value_added_tax');
-            $table->float('order_tax');
-            $table->float('cost_total');
-            $table->string('product_numbert', 100);
-            $table->string('address_delivery', 100);
-            $table->string('name_recipient', 50);
-            $table->string('phone_number_recipient', 20);
-            
+            $table->float('tax');
+            $table->float('total_cost');
+            $table->integer('total_items')->unsigned();
+            $table->string('sender', 50);
+            $table->string('sender_phone', 50);
+            $table->string('sender_email', 50)->nullable();
+            $table->string('recipient', 50);
+            $table->string('recipient_phone', 20);
+            $table->string('recipient_email', 50)->nullable();
+            $table->string('delivery_address', 100);
+            $table->date('processing_date')->nullable();
+            $table->date('delivery_date')->nullable();
+            $table->timestamps();
         });
     }
 

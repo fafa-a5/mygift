@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Product;
 use Illuminate\Http\Request;
 
-class HomeController extends Controller
+class IndexController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -14,7 +14,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-       
+       // $this->middleware('auth');
     }
 
     /**
@@ -25,24 +25,27 @@ class HomeController extends Controller
     
 
     public function index()
-   {
+    {
         $products = Product::all();
+
         return view('index', [
             'products' => $products
         ]);
     }
 
-    public function show($id)
+    public function checkout($id)
     {
         $product = Product::find($id);
-            if(!$product){
-        request()->session()->flash('error','Unable to locate the product');
-        return to_route('show')->withErrors([
-            'errors' => 'Unable to locate the product'
+        /*if(!$product){
+            request()->session()->flash('error','Unable to locate the todo');
+            return to_route('detail')->withErrors([
+                'errors' => 'Unable to locate the todo'
+            ]);
+        }*/
+        
+        return view('checkout', [
+            'product' => $product
         ]);
-        }
-        return view('product_detail', [
-            'product' => $product]);
 
     }
 }
