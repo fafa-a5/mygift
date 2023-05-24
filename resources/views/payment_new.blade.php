@@ -19,7 +19,7 @@
         data-public-key="pk_live_uuOF1TZTzbjOcwRqRSv5Zep3"
         data-button-text="Payer"
         data-button-class="button-class"
-        data-transaction-amount="1000"
+        data-transaction-amount="3000"
         data-transaction-description="Description de la transaction"
         data-currency-iso="XOF">
       </script>

@@ -14,7 +14,7 @@ class ProductsTableData extends Seeder
      */
     public function run(): void
     {
-        Product::insert(
+        Product::insert([
             [
                 'name' => 'BAG',
                 'price_before_tax' => 2000,
@@ -85,7 +85,7 @@ class ProductsTableData extends Seeder
                 'category' => 'PARFUM  moyen',
                 'image' => '/i.jpg'
             ],
-        );
+        ]);
       
     }
 }

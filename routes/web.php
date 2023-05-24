@@ -1,5 +1,9 @@
 <?php
 
+use App\Http\Controllers\Admin_OrdersController;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\AdminOrdersController;
+use App\Http\Controllers\AdminProductController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\OrderController;
@@ -23,6 +27,11 @@ Route::get('/checkout/product/{id}',  [IndexController::class,'checkout'])->name
 Route::post('/orders', [OrderController::class, 'store'])->name('orders');
 Route::get('/payment/order/{id}', [PaymentController::class, 'create'])->name('payment.new');
 Route::post('/payments', [PaymentController::class, 'store'])->name('payments.store');
+
+Route::get('admin/dashboard', [AdminController::class, 'index']);
+Route::get('admin/orders', [AdminOrdersController::class, 'index'])->name('admin.orders');
+Route::get('admin/products', [AdminProductController::class, 'index'])->name('admin.products');
+Route::get('admin/products/edit', [AdminProductController::class, 'edit'])->name('admin.products');
 Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 

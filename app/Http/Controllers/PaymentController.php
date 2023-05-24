@@ -22,7 +22,7 @@ class PaymentController extends Controller
          Payment::create([
             'slug' => 'P' . date('Ymd') . uniqid(),
             'number_received' => $request -> number_received,
-            'cost' => $request -> cost,
+            'cost' => $request -> total_cost,
             'method' => $request -> method
         ]);
     }
