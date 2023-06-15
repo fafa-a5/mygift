@@ -22,16 +22,16 @@
     <div class="container">
       <div class="d-flex justify-content-between">
         <!-- Left elements -->
-        <div class="">
+        <!-- <div class="">
           <a href="https://mdbootstrap.com/" target="_blank" class="">
             <img src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.png" height="35" />
           </a>
-        </div>
+        </div> -->
         <!-- Left elements -->
 
         <!-- right elements -->
         <div class="">
-          <a href="https://github.com/mdbootstrap/bootstrap-material-design" class="me-1 border rounded py-1 px-3 nav-link" target="_blank"> <i class="fas fa-user-alt me-2"></i>Sign in </a>
+          <a href="https://github.com/mdbootstrap/bootstrap-material-design" class="me-1 border rounded py-1 px-3 nav-link" target="_blank"> <i class="fas fa-user-alt me-2"></i>S'inscrire </a>
         </div>
         <!-- right elements -->
       </div>
@@ -45,13 +45,13 @@
       <!-- Breadcrumb -->
       <nav class="d-flex">
         <h6 class="mb-0">
-          <a href="" class="text-white-50">Home</a>
+          <a href="" class="text-white-50">Acceiul</a>
           <span class="text-white-50 mx-2"> > </span>
-          <a href="" class="text-white-50">2. Shopping cart</a>
+          <a href="" class="text-white-50">2. Panier d'achat</a>
           <span class="text-white-50 mx-2"> > </span>
-          <a href="" class="text-white"><u>3. Order info</u></a>
+          <a href="" class="text-white"><u>3. Informations sur les commandes</u></a>
           <span class="text-white-50 mx-2"> > </span>
-          <a href="" class="text-white-50">4. Payment</a>
+          <a href="" class="text-white-50">4. Paiement</a>
         </h6>
       </nav>
       <!-- Breadcrumb -->
@@ -67,12 +67,12 @@
         <div class="card mb-4 border shadow-0">
           <div class="p-4 d-flex justify-content-between">
             <div class="">
-              <h5>Have an account?</h5>
-              <p class="mb-0 text-wrap ">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+              <h5>Vous avez un compte ?</h5>
+              <!-- <p class="mb-0 text-wrap ">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p> -->
             </div>
             <div class="d-flex align-items-center justify-content-center flex-column flex-md-row">
-              <a href="#" class="btn btn-outline-primary me-0 me-md-2 mb-2 mb-md-0 w-100">Register</a>
-              <a href="#" class="btn btn-primary shadow-0 text-nowrap w-100">Sign in</a>
+              <a href="#" class="btn btn-outline-primary me-0 me-md-2 mb-2 mb-md-0 w-100">Enregistrer</a>
+              <a href="#" class="btn btn-primary shadow-0 text-nowrap w-100">S'inscrire</a>
             </div>
           </div>
         </div>
@@ -259,7 +259,7 @@
 
             <div class="float-end">
               <!--<button class="btn btn-light border">Cancel</button>-->
-              <a class="inner btn btn-sm btn-info" href="#">Cancel</a>
+              <a class="inner btn btn-sm btn-info" href="#">Annuler</a>
               <!--<button class="btn btn-success shadow-0 border">Continue</button>-->
               <input type="submit" class="inner btn btn-sm btn-info" value="Continuer">
             </div>
@@ -305,10 +305,10 @@
             </div>
             <div class="">
               <a href="#" class="nav-link">
-                Gaming Headset with Mic <br />
-                Darkblue color
+              Casque de jeu avec micro <br />
+                Couleur bleu foncé
               </a>
-              <div class="price text-muted">Total: $295.99</div>
+              <div class="price text-muted">Total: {{ $product->price_before_tax }} F CFA</div>
             </div>
           </div>
 
@@ -321,10 +321,10 @@
             </div>
             <div class="">
               <a href="#" class="nav-link">
-                Apple Watch Series 4 Space <br />
-                Large size
+              Apple Watch Series 4 Espace </br >
+                Grande taille
               </a>
-              <div class="price text-muted">Total: $217.99</div>
+              <div class="price text-muted">Total: {{ $product->price_before_tax }} F CFA</div>
             </div>
           </div>
 
@@ -336,8 +336,8 @@
               <img src="https://bootstrap-ecommerce.com/bootstrap5-ecommerce/images/items/1.webp" style="height: 96px; width: 96x;" class="img-sm rounded border" />
             </div>
             <div class="">
-              <a href="#" class="nav-link">GoPro HERO6 4K Action Camera - Black</a>
-              <div class="price text-muted">Total: $910.00</div>
+              <a href="#" class="nav-link">GoPro HERO6 4K Action Camera - Noir</a>
+              <div class="price text-muted">Total: {{ $product->price_before_tax }} F CFA</div>
             </div>
           </div>
         </div>
@@ -354,29 +354,29 @@
       <!-- Grid row -->
       <div class="row mt-3">
         <!-- Grid column -->
-        <div class="col-12 col-lg-3 col-sm-12 mb-2">
+        <!-- <div class="col-12 col-lg-3 col-sm-12 mb-2"> -->
           <!-- Content -->
-          <a href="https://mdbootstrap.com/" target="_blank" class="text-white h2">
+          <!-- <a href="https://mdbootstrap.com/" target="_blank" class="text-white h2">
             MDB
           </a>
           <p class="mt-1 text-white">
             © 2023 Copyright: MDBootstrap.com
-          </p>
-        </div>
+          </p> -->
+        <!-- </div> -->
         <!-- Grid column -->
 
         <!-- Grid column -->
         <div class="col-6 col-sm-4 col-lg-2">
           <!-- Links -->
           <h6 class="text-uppercase text-white fw-bold mb-2">
-            Store
+            Magazin
           </h6>
-          <ul class="list-unstyled mb-4">
+          <!-- <ul class="list-unstyled mb-4">
             <li><a class="text-white-50" href="#">About us</a></li>
             <li><a class="text-white-50" href="#">Find store</a></li>
             <li><a class="text-white-50" href="#">Categories</a></li>
             <li><a class="text-white-50" href="#">Blogs</a></li>
-          </ul>
+          </ul> -->
         </div>
         <!-- Grid column -->
 
@@ -386,12 +386,12 @@
           <h6 class="text-uppercase text-white fw-bold mb-2">
             Information
           </h6>
-          <ul class="list-unstyled mb-4">
+          <!-- <ul class="list-unstyled mb-4">
             <li><a class="text-white-50" href="#">Help center</a></li>
             <li><a class="text-white-50" href="#">Money refund</a></li>
             <li><a class="text-white-50" href="#">Shipping info</a></li>
             <li><a class="text-white-50" href="#">Refunds</a></li>
-          </ul>
+          </ul> -->
         </div>
         <!-- Grid column -->
 
@@ -401,24 +401,24 @@
           <h6 class="text-uppercase text-white fw-bold mb-2">
             Support
           </h6>
-          <ul class="list-unstyled mb-4">
+          <!-- <ul class="list-unstyled mb-4">
             <li><a class="text-white-50" href="#">Help center</a></li>
             <li><a class="text-white-50" href="#">Documents</a></li>
             <li><a class="text-white-50" href="#">Account restore</a></li>
             <li><a class="text-white-50" href="#">My orders</a></li>
-          </ul>
+          </ul> -->
         </div>
         <!-- Grid column -->
 
         <!-- Grid column -->
         <div class="col-12 col-sm-12 col-lg-3">
           <!-- Links -->
-          <h6 class="text-uppercase text-white fw-bold mb-2">Newsletter</h6>
-          <p class="text-white">Stay in touch with latest updates about our products and offers</p>
+          <h6 class="text-uppercase text-white fw-bold mb-2">Bulletin d'information</h6>
+          <p class="text-white">Restez en contact avec les dernières mises à jour sur nos produits et offres</p>
           <div class="input-group mb-3">
             <input type="email" class="form-control border" placeholder="Email" aria-label="Email" aria-describedby="button-addon2" />
             <button class="btn btn-light border shadow-0" type="button" id="button-addon2" data-mdb-ripple-color="dark">
-              Join
+              S'inscrire
             </button>
           </div>
         </div>
@@ -447,7 +447,7 @@
 
           <ul class="dropdown-menu dropdown-menu-endp" aria-labelledby="Dropdown">
             <li>
-              <a class="dropdown-item" href="#"><i class="flag-united-kingdom flag"></i>English <i class="fa fa-check text-success ms-2"></i></a>
+              <a class="dropdown-item" href="#"><i class="flag-united-kingdom flag"></i>Français<i class="fa fa-check text-success ms-2"></i></a>
             </li>
             <li><hr class="dropdown-divider" /></li>
             <li>
@@ -463,7 +463,7 @@
               <a class="dropdown-item" href="#"><i class="flag-germany flag"></i>Deutsch</a>
             </li>
             <li>
-              <a class="dropdown-item" href="#"><i class="flag-france flag"></i>Français</a>
+              <a class="dropdown-item" href="#"><i class="flag-france flag"></i>Anglais</a>
             </li>
             <li>
               <a class="dropdown-item" href="#"><i class="flag-spain flag"></i>Español</a>

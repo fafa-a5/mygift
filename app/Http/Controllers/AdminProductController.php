@@ -49,12 +49,12 @@ class AdminProductController extends Controller
     {
         $product = Product::find($id);
         if(!$product){
-            request()->session()->flash('error','Unable to locate the todo');
-            return to_route('product.index')->withErrors([
-                'errors' => 'Unable to locate the todo'
+            request()->session()->flash('error','Unable to locate the product');
+            return to_route('admin.product.edit')->withErrors([
+                'errors' => 'Unable to locate the product'
             ]);
         }
-        return view('admin.edit', ['product' => $product]);
+        return view('admin.product.edit', ['product' => $product]);
     }
 
     /**

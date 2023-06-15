@@ -23,11 +23,11 @@
     <div class="container">
       <div class="row gy-3">
         <!-- Left elements -->
-        <div class="col-lg-2 col-sm-4 col-4">
+        <!-- <div class="col-lg-2 col-sm-4 col-4">
           <a href="https://mdbootstrap.com/" target="_blank" class="float-start">
             <img src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.png" height="35" />
           </a>
-        </div>
+        </div> -->
         <!-- Left elements -->
 
         <!-- Center elements -->
@@ -35,15 +35,15 @@
           <div class="d-flex float-end">
             <a href="https://github.com/mdbootstrap/bootstrap-material-design" class="me-1 border rounded py-1 px-3 nav-link d-flex align-items-center" target="_blank">
               <i class="fas fa-user-alt m-1 me-md-2"></i>
-              <p class="d-none d-md-block mb-0">Sign in</p>
+              <p class="d-none d-md-block mb-0">S'inscrire</p>
             </a>
             <a href="https://github.com/mdbootstrap/bootstrap-material-design" class="me-1 border rounded py-1 px-3 nav-link d-flex align-items-center" target="_blank">
               <i class="fas fa-heart m-1 me-md-2"></i>
-              <p class="d-none d-md-block mb-0">Wishlist</p>
+              <p class="d-none d-md-block mb-0">Liste de souhaits</p>
             </a>
             <a href="https://github.com/mdbootstrap/bootstrap-material-design" class="border rounded py-1 px-3 nav-link d-flex align-items-center" target="_blank">
               <i class="fas fa-shopping-cart m-1 me-md-2"></i>
-              <p class="d-none d-md-block mb-0">My cart</p>
+              <p class="d-none d-md-block mb-0">Mon panier</p>
             </a>
           </div>
         </div>
@@ -54,7 +54,7 @@
           <div class="input-group float-center">
             <div class="form-outline">
               <input type="search" id="form1" class="form-control" />
-              <label class="form-label" for="form1">Search</label>
+              <label class="form-label" for="form1">Rechercher</label>
             </div>
             <button type="button" class="btn btn-primary shadow-0">
               <i class="fas fa-search"></i>
@@ -73,9 +73,9 @@
       <!-- Breadcrumb -->
       <nav class="d-flex">
         <h6 class="mb-0">
-          <a href="" class="text-white-50">Home</a>
+          <a href="" class="text-white-50">Accueil</a>
           <span class="text-white-50 mx-2"> > </span>
-          <a href="" class="text-white"><u>Shopping cart</u></a>
+          <a href="" class="text-white"><u>Panier d'achat</u></a>
         </h6>
       </nav>
       <!-- Breadcrumb -->
@@ -100,18 +100,18 @@
 <section>
   <div class="container my-5">
     <header class="mb-4">
-      <h3>Recommended items</h3>
+      <h3>Articles recommandés</h3>
     </header>
     
     <div class="row">
-    @foreach ($products as $product)
+      @foreach ($products as $product)
       <div class="col-lg-3 col-md-6 col-sm-6">
         <div class="card px-4 border shadow-0 mb-4 mb-lg-0">
           <div class="mask px-2" style="height: 50px;">
-            <div class="d-flex justify-content-between">
-              <h6><span class="badge bg-danger pt-1 mt-3 ms-2">New</span></h6>
+            <!-- <div class="d-flex justify-content-between">
+              <h6><span class="badge bg-danger pt-1 mt-3 ms-2">Nouveau</span></h6>
               <a href="#"><i class="fas fa-heart text-primary fa-lg float-end pt-3 m-2"></i></a>
-            </div>
+            </div> -->
           </div>
           <a href="#" class="">
             <img src="/storage/products/img/{{ $product->image }}" class="card-img-top rounded-2" />
@@ -124,7 +124,7 @@
               <!-- <del class="">$24.99</del> -->
             </div>
             <div class="card-footer d-flex align-items-end pt-3 px-0 pb-0 mt-auto">
-              <a href="#" class="btn btn-outline-primary w-100">Add to cart</a>
+              <a href="#" class="btn btn-outline-primary w-100">Ajout au panier</a>
             </div>
           </div>
         </div>
@@ -144,29 +144,29 @@
       <!-- Grid row -->
       <div class="row mt-3">
         <!-- Grid column -->
-        <div class="col-12 col-lg-3 col-sm-12 mb-2">
+        <!-- <div class="col-12 col-lg-3 col-sm-12 mb-2"> -->
           <!-- Content -->
-          <a href="https://mdbootstrap.com/" target="_blank" class="text-white h2">
+          <!--<a href="https://mdbootstrap.com/" target="_blank" class="text-white h2">
             MDB
-          </a>
-          <p class="mt-1 text-white">
+          </a>-->
+          <!-- <p class="mt-1 text-white">
             © 2023 Copyright: MDBootstrap.com
           </p>
-        </div>
+        </div> -->
         <!-- Grid column -->
 
         <!-- Grid column -->
         <div class="col-6 col-sm-4 col-lg-2">
           <!-- Links -->
           <h6 class="text-uppercase text-white fw-bold mb-2">
-            Store
+          Magasin
           </h6>
-          <ul class="list-unstyled mb-4">
+          <!--<ul class="list-unstyled mb-4">
             <li><a class="text-white-50" href="#">About us</a></li>
             <li><a class="text-white-50" href="#">Find store</a></li>
             <li><a class="text-white-50" href="#">Categories</a></li>
             <li><a class="text-white-50" href="#">Blogs</a></li>
-          </ul>
+          </ul>-->
         </div>
         <!-- Grid column -->
 
@@ -176,12 +176,12 @@
           <h6 class="text-uppercase text-white fw-bold mb-2">
             Information
           </h6>
-          <ul class="list-unstyled mb-4">
+          <!--<ul class="list-unstyled mb-4">
             <li><a class="text-white-50" href="#">Help center</a></li>
             <li><a class="text-white-50" href="#">Money refund</a></li>
             <li><a class="text-white-50" href="#">Shipping info</a></li>
             <li><a class="text-white-50" href="#">Refunds</a></li>
-          </ul>
+          </ul>-->
         </div>
         <!-- Grid column -->
 
@@ -191,24 +191,24 @@
           <h6 class="text-uppercase text-white fw-bold mb-2">
             Support
           </h6>
-          <ul class="list-unstyled mb-4">
+          <!--<ul class="list-unstyled mb-4">
             <li><a class="text-white-50" href="#">Help center</a></li>
             <li><a class="text-white-50" href="#">Documents</a></li>
             <li><a class="text-white-50" href="#">Account restore</a></li>
             <li><a class="text-white-50" href="#">My orders</a></li>
-          </ul>
+          </ul>-->
         </div>
         <!-- Grid column -->
 
         <!-- Grid column -->
         <div class="col-12 col-sm-12 col-lg-3">
           <!-- Links -->
-          <h6 class="text-uppercase text-white fw-bold mb-2">Newsletter</h6>
-          <p class="text-white">Stay in touch with latest updates about our products and offers</p>
+          <h6 class="text-uppercase text-white fw-bold mb-2">Bulletin d'information</h6>
+          <p class="text-white">Restez en contact avec les dernières mises à jour sur nos produits et offres</p>
           <div class="input-group mb-3">
             <input type="email" class="form-control border" placeholder="Email" aria-label="Email" aria-describedby="button-addon2" />
             <button class="btn btn-light border shadow-0" type="button" id="button-addon2" data-mdb-ripple-color="dark">
-              Join
+            S'INSCRIRE
             </button>
           </div>
         </div>
@@ -223,12 +223,13 @@
     <div class="container">
       <div class="d-flex justify-content-between py-4 border-top">
         <!--- payment --->
-        <div>
+        <!--<div>
           <i class="fab fa-lg fa-cc-visa text-white"></i>
           <i class="fab fa-lg fa-cc-amex text-white"></i>
           <i class="fab fa-lg fa-cc-mastercard text-white"></i>
           <i class="fab fa-lg fa-cc-paypal text-white"></i>
-        </div>
+        </div>-->
+
         <!--- payment --->
 
         <!--- language selector --->

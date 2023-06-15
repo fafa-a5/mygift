@@ -22,21 +22,21 @@
     <div class="container">
       <div class="row gy-3">
         <!-- Left elements -->
-        <div class="col-lg-2 col-sm-4 col-4">
+        <!-- <div class="col-lg-2 col-sm-4 col-4">
           <a href="https://mdbootstrap.com/" target="_blank" class="float-start">
             <img src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.png" height="35" />
           </a>
-        </div>
+        </div> -->
         <!-- Left elements -->
 
         <!-- Center elements -->
-        <div class="order-lg-last col-lg-5 col-sm-8 col-8">
+        <!-- <div class="order-lg-last col-lg-5 col-sm-8 col-8">
           <div class="d-flex float-end">
             <a href="https://github.com/mdbootstrap/bootstrap-material-design" class="me-1 border rounded py-1 px-3 nav-link d-flex align-items-center" target="_blank"> <i class="fas fa-user-alt m-1 me-md-2"></i><p class="d-none d-md-block mb-0">Sign in</p> </a>
             <a href="https://github.com/mdbootstrap/bootstrap-material-design" class="me-1 border rounded py-1 px-3 nav-link d-flex align-items-center" target="_blank"> <i class="fas fa-heart m-1 me-md-2"></i><p class="d-none d-md-block mb-0">Wishlist</p> </a>
             <a href="https://github.com/mdbootstrap/bootstrap-material-design" class="border rounded py-1 px-3 nav-link d-flex align-items-center" target="_blank"> <i class="fas fa-shopping-cart m-1 me-md-2"></i><p class="d-none d-md-block mb-0">My cart</p> </a>
           </div>
-        </div>
+        </div> -->
         <!-- Center elements -->
 
         <!-- Right elements -->
@@ -44,7 +44,7 @@
           <div class="input-group float-center">
             <div class="form-outline">
               <input type="search" id="form1" class="form-control" />
-              <label class="form-label" for="form1">Search</label>
+              <label class="form-label" for="form1">Recherche</label>
             </div>
             <button type="button" class="btn btn-primary shadow-0">
               <i class="fas fa-search"></i>
@@ -63,11 +63,11 @@
       <!-- Breadcrumb -->
       <nav class="d-flex">
         <h6 class="mb-0">
-          <a href="" class="text-white-50">Home</a>
+          <a href="" class="text-white-50">Acceiul</a>
           <span class="text-white-50 mx-2"> > </span>
-          <a href="" class="text-white-50">Library</a>
+          <a href="" class="text-white-50">Bibliothèque</a>
           <span class="text-white-50 mx-2"> > </span>
-          <a href="" class="text-white"><u>Data</u></a>
+          <a href="" class="text-white"><u>Données</u></a>
         </h6>
       </nav>
       <!-- Breadcrumb -->
@@ -122,13 +122,13 @@
                 {{ $product->price_before_tax }}
               </span>
             </div>
-            <span class="text-muted"><i class="fas fa-shopping-basket fa-sm mx-1"></i>154 orders</span>
-            <span class="text-success ms-2">In stock</span>
+            <!-- <span class="text-muted"><i class="fas fa-shopping-basket fa-sm mx-1"></i>154 orders</span>
+            <span class="text-success ms-2">In stock</span> -->
           </div>
 
           <div class="mb-3">
             <span class="h5">{{ $product->price_before_tax }}</span>
-            <span class="text-muted">/per box</span>
+            <!-- <span class="text-muted">/par boîte</span> -->
           </div>
 
           <p>
@@ -137,32 +137,32 @@
 
           <div class="row">
             <dt class="col-3">Type:</dt>
-            <dd class="col-9">Regular</dd>
+            <dd class="col-9">Regulier</dd>
 
-            <dt class="col-3">Color</dt>
-            <dd class="col-9">Brown</dd>
+            <dt class="col-3">Couleur</dt>
+            <dd class="col-9">Rouge</dd>
 
-            <dt class="col-3">Material</dt>
+            <dt class="col-3">Materiel</dt>
             <dd class="col-9">Cotton, Jeans</dd>
 
-            <dt class="col-3">Brand</dt>
-            <dd class="col-9">Reebook</dd>
+            <dt class="col-3">Marque</dt>
+            <dd class="col-9">GUCCI</dd>
           </div>
 
           <hr />
 
           <div class="row mb-4">
             <div class="col-md-4 col-6">
-              <label class="mb-2">Size</label>
+              <label class="mb-2">Taille</label>
               <select class="form-select border border-secondary" style="height: 35px;">
-                <option>Small</option>
-                <option>Medium</option>
-                <option>Large</option>
+                <option>Petit</option>
+                <option>Moyen</option>
+                <option>Grand</option>
               </select>
             </div>
             <!-- col.// -->
             <div class="col-md-4 col-6 mb-3">
-              <label class="mb-2 d-block">Quantity</label>
+              <label class="mb-2 d-block">Quantité</label>
               <div class="input-group mb-3" style="width: 170px;">
                 <button class="btn btn-white border border-secondary px-3" type="button" id="button-addon1" data-mdb-ripple-color="dark">
                   <i class="fas fa-minus"></i>
@@ -174,10 +174,10 @@
               </div>
             </div>
           </div>
-          <a href="{{ route('checkout', $product->id) }}" class="btn btn-warning shadow-0"> Buy now </a>
+          <a href="{{ route('checkout', $product->id) }}" class="btn btn-warning shadow-0"> Acheter Maintenant </a>
           <!--<a href="{{ route('checkout', $product->id) }}" class="inner btn btn-sm btn-info">Buy now</a>-->
-          <a href="#" class="btn btn-primary shadow-0"> <i class="me-1 fa fa-shopping-basket"></i> Add to cart </a>
-          <a href="#" class="btn btn-light border border-secondary py-2 icon-hover px-3"> <i class="me-1 fa fa-heart fa-lg"></i> Save </a>
+          <a href="#" class="btn btn-primary shadow-0"> <i class="me-1 fa fa-shopping-basket"></i> Ajout au panier </a>
+          <a href="#" class="btn btn-light border border-secondary py-2 icon-hover px-3"> <i class="me-1 fa fa-heart fa-lg"></i> Enregistrer </a>
         </div>
       </main>
     </div>
@@ -189,9 +189,9 @@
   <div class="container">
     <div class="row gx-4">
       <div class="col-lg-8 mb-4">
-        <div class="border rounded-2 px-3 py-2 bg-white">
+        <!-- <div class="border rounded-2 px-3 py-2 bg-white"> -->
           <!-- Pills navs -->
-          <ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
+          <!-- <ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
             <li class="nav-item d-flex" role="presentation">
               <a class="nav-link d-flex align-items-center justify-content-center w-100 active" id="ex1-tab-1" data-mdb-toggle="pill" href="#ex1-pills-1" role="tab" aria-controls="ex1-pills-1" aria-selected="true">Specification</a>
             </li>
@@ -204,11 +204,12 @@
             <li class="nav-item d-flex" role="presentation">
               <a class="nav-link d-flex align-items-center justify-content-center w-100" id="ex1-tab-4" data-mdb-toggle="pill" href="#ex1-pills-4" role="tab" aria-controls="ex1-pills-4" aria-selected="false">Seller profile</a>
             </li>
-          </ul>
+          </ul> -->
           <!-- Pills navs -->
 
           <!-- Pills content -->
-          <div class="tab-content" id="ex1-content">
+          <!--pied de page détail-->
+          <!-- <div class="tab-content" id="ex1-content">
             <div class="tab-pane fade show active" id="ex1-pills-1" role="tabpanel" aria-labelledby="ex1-tab-1">
               <p>
                 With supporting text below as a natural lead-in to additional content. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -274,15 +275,15 @@
               aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
               officia deserunt mollit anim id est laborum.
             </div>
-          </div>
+          </div> -->
           <!-- Pills content -->
-        </div>
+        <!-- </div> -->
       </div>
       <div class="col-lg-4">
         <div class="px-0 border rounded-2 shadow-0">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Similar items</h5>
+              <h5 class="card-title">Articles similaires</h5>
               <div class="d-flex mb-3">
                 <a href="#" class="me-3">
                   <img src="https://bootstrap-ecommerce.com/bootstrap5-ecommerce/images/items/8.webp" style="min-width: 96px; height: 96px;" class="img-md img-thumbnail" />
@@ -292,7 +293,7 @@
                     Rucksack Backpack Large <br />
                     Line Mounts
                   </a>
-                  <strong class="text-dark"> $38.90</strong>
+                  <strong class="text-dark"> {{ $product->price_before_tax }} F CFA</strong>
                 </div>
               </div>
 
@@ -305,7 +306,7 @@
                     Summer New Men's Denim <br />
                     Jeans Shorts
                   </a>
-                  <strong class="text-dark"> $29.50</strong>
+                  <strong class="text-dark">{{ $product->price_before_tax }} F CFA</strong>
                 </div>
               </div>
 
@@ -315,7 +316,7 @@
                 </a>
                 <div class="info">
                   <a href="#" class="nav-link mb-1"> T-shirts with multiple colors, for men and lady </a>
-                  <strong class="text-dark"> $120.00</strong>
+                  <strong class="text-dark">{{ $product->price_before_tax }} F CFA</strong>
                 </div>
               </div>
 
@@ -325,7 +326,7 @@
                 </a>
                 <div class="info">
                   <a href="#" class="nav-link mb-1"> Blazer Suit Dress Jacket for Men, Blue color </a>
-                  <strong class="text-dark"> $339.90</strong>
+                  <strong class="text-dark"> {{ $product->price_before_tax }} F CFA</strong>
                 </div>
               </div>
             </div>
@@ -343,29 +344,28 @@
       <!-- Grid row -->
       <div class="row mt-3">
         <!-- Grid column -->
-        <div class="col-12 col-lg-3 col-sm-12 mb-2">
-          <!-- Content -->
+        <!-- <div class="col-12 col-lg-3 col-sm-12 mb-2">
           <a href="https://mdbootstrap.com/" target="_blank" class="text-white h2">
             MDB
           </a>
           <p class="mt-1 text-white">
             © 2023 Copyright: MDBootstrap.com
           </p>
-        </div>
+        </div> -->
         <!-- Grid column -->
 
         <!-- Grid column -->
         <div class="col-6 col-sm-4 col-lg-2">
           <!-- Links -->
           <h6 class="text-uppercase text-white fw-bold mb-2">
-            Store
+            MAGAZIN
           </h6>
-          <ul class="list-unstyled mb-4">
+          <!-- <ul class="list-unstyled mb-4">
             <li><a class="text-white-50" href="#">About us</a></li>
             <li><a class="text-white-50" href="#">Find store</a></li>
             <li><a class="text-white-50" href="#">Categories</a></li>
             <li><a class="text-white-50" href="#">Blogs</a></li>
-          </ul>
+          </ul> -->
         </div>
         <!-- Grid column -->
 
@@ -375,12 +375,12 @@
           <h6 class="text-uppercase text-white fw-bold mb-2">
             Information
           </h6>
-          <ul class="list-unstyled mb-4">
+          <!-- <ul class="list-unstyled mb-4">
             <li><a class="text-white-50" href="#">Help center</a></li>
             <li><a class="text-white-50" href="#">Money refund</a></li>
             <li><a class="text-white-50" href="#">Shipping info</a></li>
             <li><a class="text-white-50" href="#">Refunds</a></li>
-          </ul>
+          </ul> -->
         </div>
         <!-- Grid column -->
 
@@ -390,24 +390,24 @@
           <h6 class="text-uppercase text-white fw-bold mb-2">
             Support
           </h6>
-          <ul class="list-unstyled mb-4">
+          <!-- <ul class="list-unstyled mb-4">
             <li><a class="text-white-50" href="#">Help center</a></li>
             <li><a class="text-white-50" href="#">Documents</a></li>
             <li><a class="text-white-50" href="#">Account restore</a></li>
             <li><a class="text-white-50" href="#">My orders</a></li>
-          </ul>
+          </ul> -->
         </div>
         <!-- Grid column -->
 
         <!-- Grid column -->
         <div class="col-12 col-sm-12 col-lg-3">
           <!-- Links -->
-          <h6 class="text-uppercase text-white fw-bold mb-2">Newsletter</h6>
-          <p class="text-white">Stay in touch with latest updates about our products and offers</p>
+          <h6 class="text-uppercase text-white fw-bold mb-2">Bulletin d'information</h6>
+          <p class="text-white">Restez en contact avec les dernières mises à jour sur nos produits et offres</p>
           <div class="input-group mb-3">
             <input type="email" class="form-control border" placeholder="Email" aria-label="Email" aria-describedby="button-addon2" />
             <button class="btn btn-light border shadow-0" type="button" id="button-addon2" data-mdb-ripple-color="dark">
-              Join
+              S'inscrire
             </button>
           </div>
         </div>
@@ -422,12 +422,12 @@
     <div class="container">
       <div class="d-flex justify-content-between py-4 border-top">
         <!--- payment --->
-        <div>
+        <!-- <div>
           <i class="fab fa-lg fa-cc-visa text-white"></i>
           <i class="fab fa-lg fa-cc-amex text-white"></i>
           <i class="fab fa-lg fa-cc-mastercard text-white"></i>
           <i class="fab fa-lg fa-cc-paypal text-white"></i>
-        </div>
+        </div> -->
         <!--- payment --->
 
         <!--- language selector --->

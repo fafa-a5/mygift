@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 700px; /* Ajustez la largeur de la div selon vos besoins */
+  height: 700px; /* Ajustez la hauteur de la div selon vos besoins */
+  border: 0px solid black;
+}
+
+.image-centered {
+  margin-right: 10px;
+  max-height: 100%;
+  max-width: 100%;
+}
+.container {
+  text-align: right;
+}
+.container p {
+  text-align: left;
+}
+
+.container {
+  text-align: center; /* Aligne le texte au centre horizontalement */
+}
+
+
+
+
+

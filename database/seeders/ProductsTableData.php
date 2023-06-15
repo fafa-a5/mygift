@@ -16,74 +16,74 @@ class ProductsTableData extends Seeder
     {
         Product::insert([
             [
-                'name' => 'BAG',
+                'name' => 'SAC',
                 'price_before_tax' => 2000,
                 'description' => 'SAC DE TURQUIE',
                 'category' => 'SAC moyen',
                 'image' => '/a.jpg'
             ],
             [
-                'name' => 'BAG',
+                'name' => 'SAC',
                 'price_before_tax' => 3000,
                 'description' => 'SAC DE TURQUIE',
                 'category' => 'SAC moyen',
                 'image' => '/b.jpg'
             ],
             [
-                'name' => 'PAGNE 1',
+                'name' => 'PAGNE',
                 'price_before_tax' => 3000,
                 'description' => 'Pagne de bonne qualité en cotton',
                 'category' => 'Pagne moyen',
-                'image' => '/C.jpg'
+                'image' => '/c.jpg'
             ],
             [
-                'name' => 'PAGNE 2',
+                'name' => 'PAGNE',
                 'price_before_tax' => 2000,
                 'description' => 'Pagne de bonne qualité en cotton',
                 'category' => 'Pagne moyen',
                 'image' => '/d.jpg'
             ],
             [
-                'name' => 'PAGNE 3',
+                'name' => 'PAGNE',
                 'price_before_tax' => 2000,
                 'description' => 'Pagne de bonne qualité en cotton',
                 'category' => 'Pagne moyen',
                 'image' => '/e.jpg'
             ],
             [
-                'name' => 'PAGNE 4',
+                'name' => 'PAGNE',
                 'price_before_tax' => 2000,
                 'description' => 'Pagne de bonne qualité en cotton',
                 'category' => 'Pagne moyen',
                 'image' => '/f.jpg'
             ],
             [
-                'name' => 'PAGNE 5',
-                'price_before_tax' => 2000,
-                'description' => 'Pagne de bonne qualité en cotton',
-                'category' => 'Pagne moyen',
-                'image' => '/f.jpg'
-            ],
-            [
-                'name' => 'PAGNE 6',
+                'name' => 'PAGNE',
                 'price_before_tax' => 2000,
                 'description' => 'Pagne de bonne qualité en cotton',
                 'category' => 'Pagne moyen',
                 'image' => '/g.jpg'
             ],
             [
-                'name' => 'PARFUM 1',
+                'name' => 'PAGNE',
                 'price_before_tax' => 2000,
-                'description' => 'PARFUM de bonne qualité de suise',
-                'category' => 'PARFUM  moyen',
+                'description' => 'Pagne de bonne qualité en cotton',
+                'category' => 'Pagne moyen',
                 'image' => '/h.jpg'
             ],
             [
-                'name' => 'PARFUM 2',
+                'name' => 'PARFUM',
                 'price_before_tax' => 2000,
                 'description' => 'PARFUM de bonne qualité de suise',
                 'category' => 'PARFUM  moyen',
                 'image' => '/i.jpg'
+            ],
+            [
+                'name' => 'PARFUM',
+                'price_before_tax' => 2000,
+                'description' => 'PARFUM de bonne qualité de suise',
+                'category' => 'PARFUM  moyen',
+                'image' => '/j.jpg'
             ],
         ]);
       
